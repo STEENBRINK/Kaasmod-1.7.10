@@ -1,0 +1,22 @@
+[
+{
+  "modid": "Kaasmod",
+  "name": "Steenbrink's Kaasmod",
+  "description": "A mod to make cheese, what's more to life?",
+  "version": "1.7.10-06.10.14-0.1a",
+  "mcversion": "1.7.10",
+  "url": "steenbrink.webmichiel.nl",
+  "updateUrl": "",
+  "authorList": [
+    "Steenbrink",
+    "msvisser"
+  ],
+  "credits": "",
+  "logoFile": "assets/kaasmod/textures/logo/kaaslogo.png",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
