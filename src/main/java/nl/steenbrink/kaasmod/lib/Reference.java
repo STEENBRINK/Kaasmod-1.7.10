@@ -11,4 +11,5 @@ public class Reference
     //Config classes
 
     public static final String CFG_TEST = "Test";
+    public static final String kaas = "kaas";
 }
