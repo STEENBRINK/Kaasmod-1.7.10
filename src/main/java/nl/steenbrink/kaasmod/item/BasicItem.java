@@ -5,6 +5,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import nl.steenbrink.kaasmod.creativetab.KaasmodCreativetab;
 import nl.steenbrink.kaasmod.lib.Reference;
 
 public class BasicItem extends Item
@@ -12,6 +13,7 @@ public class BasicItem extends Item
     public BasicItem()
     {
         super();
+        this.setCreativeTab(KaasmodCreativetab.KAASMOD_TAB);
     }
 
     @Override
