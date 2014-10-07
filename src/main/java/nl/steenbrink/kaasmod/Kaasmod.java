@@ -1,5 +1,6 @@
 package nl.steenbrink.kaasmod;
 
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -22,6 +23,7 @@ public class Kaasmod
     public void preInit(FMLPreInitializationEvent evt)
     {
         ConfigHandler.init(evt.getSuggestedConfigurationFile());
+        FMLCommonHandler.instance().bus().register(new ConfigHandler());
     }
 
     @Mod.EventHandler
