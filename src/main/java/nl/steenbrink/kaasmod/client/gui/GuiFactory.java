@@ -11,13 +11,13 @@ public class GuiFactory implements IModGuiFactory
     @Override
     public void initialize(Minecraft minecraftInstance)
     {
-        
+
     }
 
     @Override
     public Class<? extends GuiScreen> mainConfigGuiClass()
     {
-        return null;
+        return MyGuiConfig.class;
     }
 
     @Override
