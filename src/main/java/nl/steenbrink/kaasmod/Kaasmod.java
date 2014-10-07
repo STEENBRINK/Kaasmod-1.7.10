@@ -9,7 +9,7 @@ import nl.steenbrink.kaasmod.handler.ConfigHandler;
 import nl.steenbrink.kaasmod.lib.Reference;
 import nl.steenbrink.kaasmod.proxy.IProxy;
 
-@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, guiFactory = Reference.GUI_FACTORY)
 public class Kaasmod
 {
     @Mod.Instance(Reference.MOD_ID)
