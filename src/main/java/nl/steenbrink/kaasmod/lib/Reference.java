@@ -10,8 +10,8 @@ public class Reference
     //Paths
     public static final String CLIENT_PROXY = "nl.steenbrink.kaasmod.proxy.ClientProxy";
     public static final String SERVER_PROXY = "nl.steenbrink.kaasmod.proxy.ServerProxy";
-    public static final String GUI_FACTORY = "nl.steenbrink.kaasmod.client.gui.GuiFactory"
+    public static final String GUI_FACTORY = "nl.steenbrink.kaasmod.client.gui.GuiFactory";
 
     //Config classes
-    public static final String CFG_TEST = "Test";
+    public static final String CFG_TEST = "test";
 }
