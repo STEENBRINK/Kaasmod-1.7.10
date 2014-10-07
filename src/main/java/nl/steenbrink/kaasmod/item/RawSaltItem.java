@@ -1,7 +1,10 @@
 package nl.steenbrink.kaasmod.item;
 
-import net.minecraft.item.Item;
-
-public class RawSaltItem extends Item
+public class RawSaltItem extends BasicItem
 {
+    public RawSaltItem()
+    {
+        super();
+        this.setUnlocalizedName("rawSalt");
+    }
 }
