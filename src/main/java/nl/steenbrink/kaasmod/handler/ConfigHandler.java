@@ -16,6 +16,15 @@ public class ConfigHandler
     {
         if (configuration == null) {
             configuration = new Configuration(configFile);
+            loadConfiguration();
+        }
+    }
+
+    public static void loadConfiguration()
+    {
+        testValue = configuration.getBoolean("testValue", Reference.CFG_TEST, false, "A Comment :O");
+        if (configuration.hasChanged()) {
+            configuration.save();
         }
     }
 
@@ -23,15 +32,7 @@ public class ConfigHandler
     public void onConfigChangedEvt(ConfigChangedEvent.OnConfigChangedEvent evt)
     {
         if (evt.modID.equalsIgnoreCase(Reference.MOD_ID)) {
-            //resync
-        }
-    }
-
-    public void loadConfiguration()
-    {
-        testValue = configuration.getBoolean("testValue", Reference.CFG_TEST, false, "A Comment :O");
-        if (configuration.hasChanged()) {
-            configuration.save();
+            loadConfiguration();
         }
     }
 }
