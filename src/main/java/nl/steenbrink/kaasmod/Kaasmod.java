@@ -31,7 +31,7 @@ public class Kaasmod
         KaasmodItems.init();
         KaasmodBlocks.init();
 
-        LogHelper.info("Pre Initialization Complete!");
+        LogHelper.info("Pre Initialization Complete");
     }
 
     @Mod.EventHandler

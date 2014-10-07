@@ -1,8 +1,10 @@
 #Items
 item.kaasmod:rawSalt.name=Raw Salt
+item.kaasmod:kaas.name=Kaas
 
 #Blocks
 tile.kaasmod:saltOre.name=Salt Ore
+tile.kaasmod:kaas.nam=Kaas
 
 #Creativetab
 itemGroup.kaasmod=Steenbrink's Kaasmod

@@ -12,7 +12,7 @@ public class KaasmodCreativetab
         @Override
         public Item getTabIconItem()
         {
-            return KaasmodItems.rawSalt;
+            return KaasmodItems.kaas;
         }
     };
 }
