@@ -1,15 +1,15 @@
 package nl.steenbrink.kaasmod.lib;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.BlockCake;
 import nl.steenbrink.kaasmod.block.BasicBlock;
 import nl.steenbrink.kaasmod.block.KaasBlock;
 import nl.steenbrink.kaasmod.block.SaltoreBlock;
-
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class KaasmodBlocks
 {
     public static final BasicBlock saltOre = new SaltoreBlock();
-    public static final BasicBlock kaasBlock = new KaasBlock();
+    public static final BlockCake kaasBlock = new KaasBlock();
 
     public static void init()
     {
