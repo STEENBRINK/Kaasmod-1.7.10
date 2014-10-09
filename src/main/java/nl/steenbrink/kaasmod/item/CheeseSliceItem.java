@@ -5,6 +5,6 @@ public class CheeseSliceItem extends BasicItem
     public CheeseSliceItem()
     {
         super();
-        this.setUnlocalizedName("cheeseSliceItem");
+        this.setUnlocalizedName("cheeseSlice");
     }
 }
