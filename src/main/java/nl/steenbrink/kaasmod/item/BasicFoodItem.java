@@ -1,22 +1,18 @@
 package nl.steenbrink.kaasmod.item;
 
-import com.google.common.collect.Sets;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.block.Block;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemTool;
 import nl.steenbrink.kaasmod.creativetab.KaasmodCreativetab;
-import nl.steenbrink.kaasmod.lib.KaasmodBlocks;
 import nl.steenbrink.kaasmod.lib.Reference;
 
-public class CheeseSlicerItem extends ItemTool
+public class BasicFoodItem extends ItemFood
 {
-    public CheeseSlicerItem()
+    public BasicFoodItem(int drumsticks, float saturation, boolean wolfsfood)
     {
-        super(2.0F, ToolMaterial.IRON, Sets.newHashSet(new Block[]{KaasmodBlocks.kaasBlock}));
-        this.setUnlocalizedName("cheeseSlicer");
+        super(drumsticks, saturation, wolfsfood);
         this.setCreativeTab(KaasmodCreativetab.KAASMOD_TAB);
     }
 
@@ -44,3 +40,4 @@ public class CheeseSlicerItem extends ItemTool
         return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
     }
 }
+

@@ -25,6 +25,8 @@ public class KaasBlock extends BlockCake
     {
         super();
         this.setBlockName("kaas");
+        this.setHardness(0.5F);
+        this.setStepSound(soundTypeCloth);
     }
 
     @Override

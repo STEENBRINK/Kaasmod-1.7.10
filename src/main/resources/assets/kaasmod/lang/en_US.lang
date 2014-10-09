@@ -2,10 +2,18 @@
 item.kaasmod:rawSalt.name=Raw Salt
 item.kaasmod:kaas.name=Kaas
 item.kaasmod:cheeseSlice.name=Cheese Slice
+item.kaasmod:cheeseBread.name=Cheese Bread
+item.kaasmod:cheeseBaconBread.name=Cheese Bacon Bread
+item.kaasmod:roastedSandwich.name=Roasted Sandwich
+item.kaasmod:cheeseSlicer.name=Cheese Slicer
+item.kaasmod:ingredients.name=Ingredients
+item.kaasmod:pureSalt.name=Pure Salt
+item.kaasmod:kaasBrick.name=Kaasbrick
 
 #Blocks
 tile.kaasmod:saltOre.name=Salt Ore
-tile.kaasmod:kaas.nam=Kaas
+tile.kaasmod:kaas.name=Kaas
+tile.kaasmod:kaasBricks.name=Kaas Bricks
 
 #Creativetab
 itemGroup.kaasmod=Steenbrink's Kaasmod
