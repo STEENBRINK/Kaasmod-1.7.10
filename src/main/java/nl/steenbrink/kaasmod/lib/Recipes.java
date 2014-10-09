@@ -20,6 +20,6 @@ public class Recipes
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(KaasmodItems.ingredients), new ItemStack(KaasmodItems.pureSalt), new ItemStack(Items.milk_bucket)));
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(KaasmodItems.breadSlice, 2), new ItemStack(Items.bread), new ItemStack(KaasmodItems.knive)));
 
-        GameRegistry.addSmelting(new);
+        GameRegistry.addSmelting(new ItemStack(KaasmodItems.roastedSandwich), );
     }
 }
