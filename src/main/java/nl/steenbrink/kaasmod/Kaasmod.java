@@ -9,6 +9,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import nl.steenbrink.kaasmod.handler.ConfigHandler;
 import nl.steenbrink.kaasmod.lib.KaasmodBlocks;
 import nl.steenbrink.kaasmod.lib.KaasmodItems;
+import nl.steenbrink.kaasmod.lib.Recipes;
 import nl.steenbrink.kaasmod.lib.Reference;
 import nl.steenbrink.kaasmod.proxy.IProxy;
 import nl.steenbrink.kaasmod.util.LogHelper;
@@ -30,6 +31,7 @@ public class Kaasmod
 
         KaasmodItems.init();
         KaasmodBlocks.init();
+        Recipes.init();
 
         LogHelper.info("Pre Initialization Complete");
     }
