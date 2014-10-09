@@ -9,6 +9,8 @@ item.kaasmod:cheeseSlicer.name=Cheese Slicer
 item.kaasmod:ingredients.name=Ingredients
 item.kaasmod:pureSalt.name=Pure Salt
 item.kaasmod:kaasBrick.name=Kaasbrick
+item.kaasmod:knive.name=Knive
+item.kaasmod:breadSlice.name=Bread Slice
 
 #Blocks
 tile.kaasmod:saltOre.name=Salt Ore

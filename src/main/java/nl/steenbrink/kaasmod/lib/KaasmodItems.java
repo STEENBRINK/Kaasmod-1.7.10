@@ -17,6 +17,8 @@ public class KaasmodItems
     public static final BasicItem ingredients = new IngredientsItem();
     public static final BasicItem pureSalt = new PureSaltItem();
     public static final BasicItem kaasBrick = new KaasBrickItem();
+    public static final BasicItem knive = new KniveItem();
+    public static final BasicFoodItem breadSlice = new BreadSliceItem();
 
 
     public static void init()
@@ -31,6 +33,8 @@ public class KaasmodItems
         GameRegistry.registerItem(ingredients, "ingredients");
         GameRegistry.registerItem(pureSalt, "pureSalt");
         GameRegistry.registerItem(kaasBrick, "kaasBrick");
+        GameRegistry.registerItem(knive, "knive");
+        GameRegistry.registerItem(breadSlice, "breadSlice");
 
     }
 }

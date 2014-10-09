@@ -20,6 +20,7 @@ public class BasicBlock extends Block
     public BasicBlock()
     {
         this(Material.rock);
+        this.setHardness(1.5F);
     }
 
     @Override
