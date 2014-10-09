@@ -1,6 +1,7 @@
 #Items
 item.kaasmod:rawSalt.name=Raw Salt
 item.kaasmod:kaas.name=Kaas
+item.kaasmod:cheeseSlice.name=Cheese Slice
 
 #Blocks
 tile.kaasmod:saltOre.name=Salt Ore
