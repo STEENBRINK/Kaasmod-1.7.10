@@ -11,10 +11,12 @@ public class KaasSlabBlock extends BlockStoneSlab
 {
     public KaasSlabBlock(boolean isDoubleSlab)
     {
-        super(false);
+        super(isDoubleSlab);
         this.setHardness(1.5F);
         this.setCreativeTab(KaasmodCreativetab.KAASMOD_TAB);
         this.setResistance(10.0F);
+        this.setBlockName("kaasSlab");
+        this.setStepSound(soundTypePiston);
     }
 
     @Override
