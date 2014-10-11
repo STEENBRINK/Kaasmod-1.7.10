@@ -2,25 +2,18 @@ package nl.steenbrink.kaasmod.block;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
+import net.minecraft.block.BlockStoneSlab;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import nl.steenbrink.kaasmod.creativetab.KaasmodCreativetab;
 import nl.steenbrink.kaasmod.lib.Reference;
 
-public class BasicBlock extends Block
+public class KaasSlabBlock extends BlockStoneSlab
 {
-    public BasicBlock(Material material)
+    public KaasSlabBlock(boolean isDoubleSlab)
     {
-        super(material);
-        this.setCreativeTab(KaasmodCreativetab.KAASMOD_TAB);
-
-    }
-
-    public BasicBlock()
-    {
-        this(Material.rock);
+        super(false);
         this.setHardness(1.5F);
+        this.setCreativeTab(KaasmodCreativetab.KAASMOD_TAB);
         this.setResistance(10.0F);
     }
 
@@ -41,4 +34,5 @@ public class BasicBlock extends Block
     {
         return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
     }
+
 }
