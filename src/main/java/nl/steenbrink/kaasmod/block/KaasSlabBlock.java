@@ -4,7 +4,9 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.BlockStoneSlab;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.util.IIcon;
 import nl.steenbrink.kaasmod.creativetab.KaasmodCreativetab;
+import nl.steenbrink.kaasmod.lib.KaasmodBlocks;
 import nl.steenbrink.kaasmod.lib.Reference;
 
 public class KaasSlabBlock extends BlockStoneSlab
@@ -25,11 +27,18 @@ public class KaasSlabBlock extends BlockStoneSlab
         return String.format("tile.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
 
+    @SideOnly(Side.CLIENT)
+    public IIcon getIcon(int side, int metaData)
+    {
+        return blockIcon;
+    }
+
+
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister)
     {
-        blockIcon = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())));
+        this.blockIcon = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(KaasmodBlocks.kaasBricks.getUnlocalizedName())));
     }
 
     protected String getUnwrappedUnlocalizedName(String unlocalizedName)
