@@ -20,11 +20,14 @@ public class KaasBricksSlab extends BlockSlab
     {
         super(isDouble, Material.rock);
         this.setBlockName("kaasBricksSlab");
-        this.setCreativeTab(KaasmodCreativetab.KAASMOD_TAB);
         this.setHardness(1.5F);
         this.setResistance(10.0F);
         this.setStepSound(soundTypePiston);
         this.setLightOpacity(0);
+
+        if (isDouble == false) {
+            this.setCreativeTab(KaasmodCreativetab.KAASMOD_TAB);
+        }
     }
 
     @Override
