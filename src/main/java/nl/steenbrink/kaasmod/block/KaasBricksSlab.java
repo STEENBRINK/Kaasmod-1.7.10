@@ -37,7 +37,7 @@ public class KaasBricksSlab extends BlockSlab
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister)
     {
-        blockIcon = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())));
+        blockIcon = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(KaasmodBlocks.kaasBricks.getUnlocalizedName())));
     }
 
     protected String getUnwrappedUnlocalizedName(String unlocalizedName)
@@ -46,7 +46,8 @@ public class KaasBricksSlab extends BlockSlab
     }
 
     @Override
-    public Item getItemDropped(int p_149650_1_, Random p_149650_2_, int p_149650_3_) {
+    public Item getItemDropped(int itemStack, Random rand, int metaData)
+    {
         return Item.getItemFromBlock(KaasmodBlocks.kaasBricksSlab);
     }
 
@@ -63,7 +64,7 @@ public class KaasBricksSlab extends BlockSlab
     }
 
     @Override
-    public String func_150002_b(int p_150002_1_)
+    public String func_150002_b(int metaData)
     {
         return this.getUnlocalizedName();
     }

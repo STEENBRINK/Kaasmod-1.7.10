@@ -20,6 +20,7 @@ public class KaasmodItems
     public static final BasicItem knive = new KniveItem();
     public static final BasicFoodItem breadSlice = new BreadSliceItem();
 
+
     public static void init()
     {
         GameRegistry.registerItem(rawSalt, "rawSalt");
