@@ -1,6 +1,7 @@
 package nl.steenbrink.kaasmod.lib;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.item.ItemSlab;
 import net.minecraft.item.ItemTool;
 import nl.steenbrink.kaasmod.item.*;
 
@@ -19,6 +20,8 @@ public class KaasmodItems
     public static final BasicItem kaasBrick = new KaasBrickItem();
     public static final BasicItem knive = new KniveItem();
     public static final BasicFoodItem breadSlice = new BreadSliceItem();
+    public static final ItemSlab mySlab = new MySlabItem(KaasmodBlocks.kaasBricksSlab, KaasmodBlocks.kaasBricksSlab, KaasmodBlocks.kaasBricksDoubleSlab, false);
+    public static final ItemSlab myDoubleSlab = new MySlabItem(KaasmodBlocks.kaasBricksDoubleSlab, KaasmodBlocks.kaasBricksSlab, KaasmodBlocks.kaasBricksDoubleSlab, true);
 
 
     public static void init()
@@ -35,6 +38,5 @@ public class KaasmodItems
         GameRegistry.registerItem(kaasBrick, "kaasBrick");
         GameRegistry.registerItem(knive, "knive");
         GameRegistry.registerItem(breadSlice, "breadSlice");
-
     }
 }
