@@ -14,13 +14,14 @@ public class BasicBlock extends Block
     {
         super(material);
         this.setCreativeTab(KaasmodCreativetab.KAASMOD_TAB);
-
     }
 
     public BasicBlock()
     {
         this(Material.rock);
         this.setHardness(1.5F);
+        this.setResistance(10.0F);
+        this.setStepSound(soundTypeStone);
     }
 
     @Override
