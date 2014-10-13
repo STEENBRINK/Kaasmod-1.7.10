@@ -49,7 +49,7 @@ public class KaasBricksSlab extends BlockSlab
     }
 
     @Override
-    public Item getItemDropped(int itemStack, Random rand, int metaData)
+    public Item getItemDropped(int metadata, Random rand, int fortune)
     {
         return Item.getItemFromBlock(KaasmodBlocks.kaasBricksSlab);
     }
