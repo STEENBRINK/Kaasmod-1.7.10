@@ -8,6 +8,8 @@ import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
+import net.minecraft.util.MovingObjectPosition;
+import net.minecraft.world.World;
 import nl.steenbrink.kaasmod.creativetab.KaasmodCreativetab;
 import nl.steenbrink.kaasmod.lib.KaasmodBlocks;
 import nl.steenbrink.kaasmod.lib.Reference;
@@ -25,9 +27,14 @@ public class KaasBricksSlab extends BlockSlab
         this.setStepSound(soundTypePiston);
         this.setLightOpacity(0);
 
-        if (isDouble == false) {
+        if (!isDouble) {
             this.setCreativeTab(KaasmodCreativetab.KAASMOD_TAB);
         }
+    }
+
+    @Override
+    public ItemStack getPickBlock(MovingObjectPosition target, World world, int x, int y, int z) {
+        return new ItemStack(KaasmodBlocks.kaasBricksSlab, 0, 0);
     }
 
     @Override

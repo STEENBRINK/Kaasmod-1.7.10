@@ -9,17 +9,16 @@ import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
-import nl.steenbrink.kaasmod.lib.KaasmodBlocks;
 
-public class ItemKaasSlab extends ItemBlock {
+public class ItemKaasmodSlab extends ItemBlock {
     private final boolean isDouble;
     private final BlockSlab singleSlab;
     private final BlockSlab doubleSlab;
 
-    public ItemKaasSlab(Block block) {
+    public ItemKaasmodSlab(BlockSlab singleSlab, BlockSlab doubleSlab, Block block) {
         super(block);
-        this.singleSlab = KaasmodBlocks.kaasBricksSlab;
-        this.doubleSlab = KaasmodBlocks.kaasBricksDoubleSlab;
+        this.singleSlab = singleSlab;
+        this.doubleSlab = doubleSlab;
         this.isDouble = false;
         this.setMaxDamage(0);
         this.setHasSubtypes(true);

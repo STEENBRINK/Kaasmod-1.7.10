@@ -5,7 +5,8 @@ import net.minecraft.block.BlockCake;
 import net.minecraft.block.BlockSlab;
 import net.minecraft.block.BlockStairs;
 import nl.steenbrink.kaasmod.block.*;
-import nl.steenbrink.kaasmod.item.ItemKaasSlab;
+import nl.steenbrink.kaasmod.item.ItemKaasBrickSlab;
+import nl.steenbrink.kaasmod.item.ItemSmoothKaasSlab;
 
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class KaasmodBlocks
@@ -26,12 +27,12 @@ public class KaasmodBlocks
         GameRegistry.registerBlock(saltOre, "saltOre");
         GameRegistry.registerBlock(kaasBlock, "kaasBlock");
         GameRegistry.registerBlock(kaasBricks, "kaasBricks");
-        GameRegistry.registerBlock(kaasBricksSlab, ItemKaasSlab.class, "kaasBricksSlab");
-        GameRegistry.registerBlock(kaasBricksDoubleSlab, ItemKaasSlab.class, "kaasBricksDoubleSlab");
+        GameRegistry.registerBlock(kaasBricksSlab, ItemKaasBrickSlab.class, "kaasBricksSlab");
+        GameRegistry.registerBlock(kaasBricksDoubleSlab, ItemKaasBrickSlab.class, "kaasBricksDoubleSlab");
         GameRegistry.registerBlock(kaasBrickStairs, "kaasBricksStairs");
         GameRegistry.registerBlock(smoothKaasBlock, "smoothKaasBlock");
-        GameRegistry.registerBlock(smoothKaasSlab, ItemKaasSlab.class, "smoothKaasSlab");
-        GameRegistry.registerBlock(smoothKaasDoubleSlab, ItemKaasSlab.class, "smoothKaasDoubleSlab");
+        GameRegistry.registerBlock(smoothKaasSlab, ItemSmoothKaasSlab.class, "smoothKaasSlab");
+        GameRegistry.registerBlock(smoothKaasDoubleSlab, ItemSmoothKaasSlab.class, "smoothKaasDoubleSlab");
         GameRegistry.registerBlock(smoothKaasStairs, "smoothKaasStairs");
     }
 }
