@@ -16,6 +16,10 @@ public class KaasmodBlocks
     public static final BlockSlab kaasBricksSlab = new KaasBricksSlab(false);
     public static final BlockSlab kaasBricksDoubleSlab = new KaasBricksSlab(true);
     public static final BlockStairs kaasBrickStairs = new KaasStairBlock(KaasmodBlocks.kaasBricks, 0);
+    public static final BasicBlock smoothKaasBlock = new SmoothKaasBlock();
+    public static final BlockSlab smoothKaasSlab = new SmoothKaasSlabBlock(false);
+    public static final BlockSlab smoothKaasDoubleSlab = new SmoothKaasSlabBlock(true);
+    public static final BlockStairs smoothKaasStairs = new SmoothKaasStairs(KaasmodBlocks.smoothKaasBlock, 0);
 
     public static void init()
     {
@@ -25,5 +29,9 @@ public class KaasmodBlocks
         GameRegistry.registerBlock(kaasBricksSlab, ItemKaasSlab.class, "kaasBricksSlab");
         GameRegistry.registerBlock(kaasBricksDoubleSlab, ItemKaasSlab.class, "kaasBricksDoubleSlab");
         GameRegistry.registerBlock(kaasBrickStairs, "kaasBricksStairs");
+        GameRegistry.registerBlock(smoothKaasBlock, "smoothKaasBlock");
+        GameRegistry.registerBlock(smoothKaasSlab, ItemKaasSlab.class, "smoothKaasSlab");
+        GameRegistry.registerBlock(smoothKaasDoubleSlab, ItemKaasSlab.class, "smoothKaasDoubleSlab");
+        GameRegistry.registerBlock(smoothKaasStairs, "smoothKaasStairs");
     }
 }
