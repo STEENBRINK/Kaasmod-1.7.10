@@ -17,22 +17,22 @@ public class KaasmodBlocks
     public static final BlockSlab kaasBricksSlab = new BlockKaasBricksSlab(false);
     public static final BlockSlab kaasBricksDoubleSlab = new BlockKaasBricksSlab(true);
     public static final BlockStairs kaasBrickStairs = new BlockKaasBricksStairs(KaasmodBlocks.kaasBricks, 0);
-    public static final BlockBasic smoothKaasBlock = new BlockSmoothKaas();
+    public static final BlockBasic smoothKaas = new BlockSmoothKaas();
     public static final BlockSlab smoothKaasSlab = new BlockSmoothKaasSlab(false);
     public static final BlockSlab smoothKaasDoubleSlab = new BlockSmoothKaasSlab(true);
-    public static final BlockStairs smoothKaasStairs = new BlockSmoothKaasStairs(KaasmodBlocks.smoothKaasBlock, 0);
+    public static final BlockStairs smoothKaasStairs = new BlockSmoothKaasStairs(KaasmodBlocks.smoothKaas, 0);
 
     public static void init()
     {
-        GameRegistry.registerBlock(saltOre, "saltOre");
-        GameRegistry.registerBlock(kaasBlock, "kaasBlock");
-        GameRegistry.registerBlock(kaasBricks, "kaasBricks");
-        GameRegistry.registerBlock(kaasBricksSlab, ItemKaasBrickSlab.class, "kaasBricksSlab");
-        GameRegistry.registerBlock(kaasBricksDoubleSlab, ItemKaasBrickSlab.class, "kaasBricksDoubleSlab");
-        GameRegistry.registerBlock(kaasBrickStairs, "kaasBricksStairs");
-        GameRegistry.registerBlock(smoothKaasBlock, "smoothKaasBlock");
-        GameRegistry.registerBlock(smoothKaasSlab, ItemSmoothKaasSlab.class, "smoothKaasSlab");
-        GameRegistry.registerBlock(smoothKaasDoubleSlab, ItemSmoothKaasSlab.class, "smoothKaasDoubleSlab");
-        GameRegistry.registerBlock(smoothKaasStairs, "smoothKaasStairs");
+        GameRegistry.registerBlock(kaasBlock, NameReference.Blocks.KAAS_BLOCK);
+        GameRegistry.registerBlock(kaasBricks, NameReference.Blocks.KAAS_BRICKS);
+        GameRegistry.registerBlock(kaasBricksSlab, ItemKaasBrickSlab.class, NameReference.Blocks.KAAS_BRICKS_SLAB);
+        GameRegistry.registerBlock(kaasBricksDoubleSlab, ItemKaasBrickSlab.class, NameReference.Blocks.KAAS_BRICKS_DOUBLE_SLAB);
+        GameRegistry.registerBlock(kaasBrickStairs, NameReference.Blocks.KAAS_BRICK_STAIRS);
+        GameRegistry.registerBlock(saltOre, NameReference.Blocks.SALT_ORE);
+        GameRegistry.registerBlock(smoothKaas, NameReference.Blocks.SMOOTH_KAAS);
+        GameRegistry.registerBlock(smoothKaasSlab, ItemSmoothKaasSlab.class, NameReference.Blocks.SMOOTH_KAAS_SLAB);
+        GameRegistry.registerBlock(smoothKaasDoubleSlab, ItemSmoothKaasSlab.class, NameReference.Blocks.SMOOTH_KAAS_DOUBLE_SLAB);
+        GameRegistry.registerBlock(smoothKaasStairs, NameReference.Blocks.SMOOTH_KAAS_STAIRS);
     }
 }

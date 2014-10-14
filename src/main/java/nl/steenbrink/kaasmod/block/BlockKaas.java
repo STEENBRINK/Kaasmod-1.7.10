@@ -10,6 +10,7 @@ import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import nl.steenbrink.kaasmod.lib.KaasmodItems;
+import nl.steenbrink.kaasmod.lib.NameReference;
 import nl.steenbrink.kaasmod.lib.Reference;
 
 public class BlockKaas extends BlockCake
@@ -24,7 +25,7 @@ public class BlockKaas extends BlockCake
     public BlockKaas()
     {
         super();
-        this.setBlockName("kaas");
+        this.setBlockName(NameReference.Blocks.KAAS_BLOCK);
         this.setHardness(0.5F);
         this.setStepSound(soundTypeCloth);
     }

@@ -9,6 +9,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemTool;
 import nl.steenbrink.kaasmod.creativetab.KaasmodCreativetab;
 import nl.steenbrink.kaasmod.lib.KaasmodBlocks;
+import nl.steenbrink.kaasmod.lib.NameReference;
 import nl.steenbrink.kaasmod.lib.Reference;
 
 public class ItemCheeseSlicer extends ItemTool
@@ -16,7 +17,7 @@ public class ItemCheeseSlicer extends ItemTool
     public ItemCheeseSlicer()
     {
         super(2.0F, ToolMaterial.IRON, Sets.newHashSet(new Block[]{KaasmodBlocks.kaasBlock}));
-        this.setUnlocalizedName("cheeseSlicer");
+        this.setUnlocalizedName(NameReference.Items.CHEESE_SLICER);
         this.setCreativeTab(KaasmodCreativetab.KAASMOD_TAB);
     }
 

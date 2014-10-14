@@ -23,12 +23,14 @@ public class NameReference
         public static final String KAAS_BLOCK = "kaas";
         public static final String KAAS_BRICKS = "kaasBricks";
         public static final String KAAS_BRICKS_SLAB = "kaasBricksSlab";
+        public static final String KAAS_BRICKS_DOUBLE_SLAB = "kaasBricksDoubleSlab";
         public static final String KAAS_CREATOR = "kaasCreator";
         public static final String KAAS_BRICK_STAIRS = "kaasBrickStairs";
         public static final String PURIFIER = "purifier";
         public static final String SALT_ORE = "saltOre";
         public static final String SMOOTH_KAAS = "smoothKaas";
         public static final String SMOOTH_KAAS_SLAB = "smoothKaasSlab";
+        public static final String SMOOTH_KAAS_DOUBLE_SLAB = "smoothKaasDoubleSlab";
         public static final String SMOOTH_KAAS_STAIRS = "smoothKaasStairs";
         public static final String TOASTER = "toaster";
     }

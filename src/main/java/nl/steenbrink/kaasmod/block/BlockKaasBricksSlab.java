@@ -12,6 +12,7 @@ import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
 import nl.steenbrink.kaasmod.creativetab.KaasmodCreativetab;
 import nl.steenbrink.kaasmod.lib.KaasmodBlocks;
+import nl.steenbrink.kaasmod.lib.NameReference;
 import nl.steenbrink.kaasmod.lib.Reference;
 
 import java.util.Random;
@@ -21,7 +22,7 @@ public class BlockKaasBricksSlab extends BlockSlab
     public BlockKaasBricksSlab(boolean isDouble)
     {
         super(isDouble, Material.rock);
-        this.setBlockName("kaasBricksSlab");
+        this.setBlockName(NameReference.Blocks.KAAS_BRICKS_SLAB);
         this.setHardness(1.5F);
         this.setResistance(10.0F);
         this.setStepSound(soundTypePiston);

@@ -6,6 +6,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
+import nl.steenbrink.kaasmod.lib.NameReference;
 
 public class ItemKaas extends ItemBasic
 {
@@ -15,7 +16,7 @@ public class ItemKaas extends ItemBasic
     {
         super();
         this.kaas = kaas;
-        this.setUnlocalizedName("kaas");
+        this.setUnlocalizedName(NameReference.Items.KAAS);
     }
 
     /**

@@ -23,17 +23,17 @@ public class KaasmodItems
 
     public static void init()
     {
-        GameRegistry.registerItem(rawSalt, "rawSalt");
-        GameRegistry.registerItem(kaas, "kaas");
-        GameRegistry.registerItem(cheeseSlice, "cheeseSlice");
-        GameRegistry.registerItem(cheeseBread, "cheeseBread");
-        GameRegistry.registerItem(cheeseBaconBread, "cheeseBaconBread");
-        GameRegistry.registerItem(roastedSandwich, "roastedSandwich");
-        GameRegistry.registerItem(cheeseSlicer, "cheeseSlicer");
-        GameRegistry.registerItem(ingredients, "ingredients");
-        GameRegistry.registerItem(pureSalt, "pureSalt");
-        GameRegistry.registerItem(kaasBrick, "kaasBrick");
-        GameRegistry.registerItem(knive, "knive");
-        GameRegistry.registerItem(breadSlice, "breadSlice");
+        GameRegistry.registerItem(breadSlice, NameReference.Items.BREAD_SLICE);
+        GameRegistry.registerItem(cheeseBaconBread, NameReference.Items.CHEESE_BACON_BREAD);
+        GameRegistry.registerItem(cheeseBread, NameReference.Items.CHEESE_BREAD);
+        GameRegistry.registerItem(cheeseSlice, NameReference.Items.CHEESE_SLICE);
+        GameRegistry.registerItem(cheeseSlicer, NameReference.Items.CHEESE_SLICER);
+        GameRegistry.registerItem(ingredients, NameReference.Items.INGREDIENTS);
+        GameRegistry.registerItem(kaas, NameReference.Items.KAAS);
+        GameRegistry.registerItem(kaasBrick, NameReference.Items.KAAS_BRICK);
+        GameRegistry.registerItem(knive, NameReference.Items.KNIVE);
+        GameRegistry.registerItem(pureSalt, NameReference.Items.PURE_SALT);
+        GameRegistry.registerItem(rawSalt, NameReference.Items.RAW_SALT);
+        GameRegistry.registerItem(roastedSandwich, NameReference.Items.ROASTED_SANDWICH);
     }
 }

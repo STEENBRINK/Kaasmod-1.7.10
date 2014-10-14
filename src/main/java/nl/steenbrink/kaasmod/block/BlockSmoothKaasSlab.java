@@ -13,6 +13,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import nl.steenbrink.kaasmod.creativetab.KaasmodCreativetab;
 import nl.steenbrink.kaasmod.lib.KaasmodBlocks;
+import nl.steenbrink.kaasmod.lib.NameReference;
 import nl.steenbrink.kaasmod.lib.Reference;
 
 import java.util.Random;
@@ -25,7 +26,7 @@ public class BlockSmoothKaasSlab extends BlockSlab
     public BlockSmoothKaasSlab(boolean isDouble)
     {
         super(isDouble, Material.rock);
-        this.setBlockName("smoothKaasSlab");
+        this.setBlockName(NameReference.Blocks.KAAS_BRICKS_SLAB);
         this.setHardness(1.5F);
         this.setResistance(10.0F);
         this.setStepSound(soundTypePiston);
@@ -52,7 +53,7 @@ public class BlockSmoothKaasSlab extends BlockSlab
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister)
     {
-        blockIcon = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(KaasmodBlocks.smoothKaasBlock.getUnlocalizedName())));
+        blockIcon = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(KaasmodBlocks.smoothKaas.getUnlocalizedName())));
         iconSide = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())) + "Side");
     }
 
