@@ -29,7 +29,7 @@ public class SmoothKaasStairs extends BlockStairs
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister)
     {
-        blockIcon = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(KaasmodBlocks.smoothKaasBlock.getUnlocalizedName())));
+        blockIcon = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(KaasmodBlocks.smoothKaasSlab.getUnlocalizedName())) + "Side");
     }
 
     protected String getUnwrappedUnlocalizedName(String unlocalizedName)

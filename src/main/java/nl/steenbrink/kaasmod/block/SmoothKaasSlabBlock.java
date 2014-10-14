@@ -8,6 +8,7 @@ import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
+import net.minecraftforge.common.util.ForgeDirection;
 import nl.steenbrink.kaasmod.creativetab.KaasmodCreativetab;
 import nl.steenbrink.kaasmod.lib.KaasmodBlocks;
 import nl.steenbrink.kaasmod.lib.Reference;
@@ -16,6 +17,9 @@ import java.util.Random;
 
 public class SmoothKaasSlabBlock extends BlockSlab
 {
+    @SideOnly(Side.CLIENT)
+    private IIcon iconSide;
+
     public SmoothKaasSlabBlock(boolean isDouble)
     {
         super(isDouble, Material.rock);
@@ -41,6 +45,7 @@ public class SmoothKaasSlabBlock extends BlockSlab
     public void registerBlockIcons(IIconRegister iconRegister)
     {
         blockIcon = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(KaasmodBlocks.smoothKaasBlock.getUnlocalizedName())));
+        iconSide = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())) + "Side");
     }
 
     protected String getUnwrappedUnlocalizedName(String unlocalizedName)
@@ -64,7 +69,11 @@ public class SmoothKaasSlabBlock extends BlockSlab
     @Override
     public IIcon getIcon(int side, int metaData)
     {
-        return blockIcon;
+        if (ForgeDirection.getOrientation(side) == ForgeDirection.UP || ForgeDirection.getOrientation(side) == ForgeDirection.DOWN) {
+            return blockIcon;
+        } else {
+            return iconSide;
+        }
     }
 
     @Override

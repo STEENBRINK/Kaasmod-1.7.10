@@ -16,7 +16,11 @@ item.kaasmod:breadSlice.name=Bread Slice
 tile.kaasmod:saltOre.name=Salt Ore
 tile.kaasmod:kaas.name=Kaas
 tile.kaasmod:kaasBricks.name=Kaas Bricks
-tile.kaasmod:kaasSlab.name=Kaas Slab
+tile.kaasmod:kaasBricksSlab.name=Kaas Bricks Slab
+tile.kaasmod:kaasBricksStairs.name=Kaas Brick Stairs
+tile.kaasmod:smoothKaasBlock.name=Smooth Kaas
+tile.kaasmod:smoothKaasSlab.name=Smooth Kaas Slab
+tile.kaasmod:smoothKaasStairs.name=Smooth Kaas Stairs
 
 #Creativetab
 itemGroup.kaasmod=Steenbrink's Kaasmod
