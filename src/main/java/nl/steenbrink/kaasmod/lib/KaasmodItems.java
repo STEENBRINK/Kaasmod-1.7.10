@@ -7,18 +7,18 @@ import nl.steenbrink.kaasmod.item.*;
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class KaasmodItems
 {
-    public static final BasicItem rawSalt = new RawSaltItem();
-    public static final BasicItem kaas = new KaasItem(KaasmodBlocks.kaasBlock);
-    public static final BasicFoodItem cheeseSlice = new CheeseSliceItem();
-    public static final BasicFoodItem cheeseBread = new CheeseBreadItem();
-    public static final BasicFoodItem cheeseBaconBread = new CheeseBaconBreadItem();
-    public static final BasicFoodItem roastedSandwich = new RoastedSandwichItem();
-    public static final ItemTool cheeseSlicer = new CheeseSlicerItem();
-    public static final BasicItem ingredients = new IngredientsItem();
-    public static final BasicItem pureSalt = new PureSaltItem();
-    public static final BasicItem kaasBrick = new KaasBrickItem();
-    public static final BasicItem knive = new KniveItem();
-    public static final BasicFoodItem breadSlice = new BreadSliceItem();
+    public static final ItemBasic rawSalt = new ItemRawSalt();
+    public static final ItemBasic kaas = new ItemKaas(KaasmodBlocks.kaasBlock);
+    public static final ItemBasicFood cheeseSlice = new ItemCheeseSlice();
+    public static final ItemBasicFood cheeseBread = new ItemCheeseBread();
+    public static final ItemBasicFood cheeseBaconBread = new ItemCheeseBaconBread();
+    public static final ItemBasicFood roastedSandwich = new ItemRoastedSandwich();
+    public static final ItemTool cheeseSlicer = new ItemCheeseSlicer();
+    public static final ItemBasic ingredients = new ItemIngredients();
+    public static final ItemBasic pureSalt = new ItemPureSalt();
+    public static final ItemBasic kaasBrick = new ItemKaasBrick();
+    public static final ItemBasic knive = new ItemKnive();
+    public static final ItemBasicFood breadSlice = new ItemBreadSlice();
 
 
     public static void init()

@@ -1,8 +1,8 @@
 package nl.steenbrink.kaasmod.block;
 
-public class SaltoreBlock extends BasicBlock
+public class BlockSaltOreBlock extends BlockBasic
 {
-    public SaltoreBlock()
+    public BlockSaltOreBlock()
     {
         super();
         this.setBlockName("saltOre");

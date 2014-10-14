@@ -1,8 +1,8 @@
 package nl.steenbrink.kaasmod.block;
 
-public class KaasBricksBlock extends BasicBlock
+public class BlockKaasBricks extends BlockBasic
 {
-    public KaasBricksBlock()
+    public BlockKaasBricks()
     {
         super();
         this.setBlockName("kaasBricks");

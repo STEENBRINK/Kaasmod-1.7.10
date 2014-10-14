@@ -7,11 +7,11 @@ import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class KaasItem extends BasicItem
+public class ItemKaas extends ItemBasic
 {
     private Block kaas;
 
-    public KaasItem(Block kaas)
+    public ItemKaas(Block kaas)
     {
         super();
         this.kaas = kaas;

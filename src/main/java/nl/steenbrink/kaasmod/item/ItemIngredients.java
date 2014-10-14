@@ -1,8 +1,8 @@
 package nl.steenbrink.kaasmod.item;
 
-public class IngredientsItem extends BasicItem
+public class ItemIngredients extends ItemBasic
 {
-    public IngredientsItem()
+    public ItemIngredients()
     {
         super();
         this.setUnlocalizedName("ingredients");

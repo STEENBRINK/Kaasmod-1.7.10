@@ -8,9 +8,9 @@ import net.minecraft.item.ItemStack;
 import nl.steenbrink.kaasmod.creativetab.KaasmodCreativetab;
 import nl.steenbrink.kaasmod.lib.Reference;
 
-public class BasicFoodItem extends ItemFood
+public class ItemBasicFood extends ItemFood
 {
-    public BasicFoodItem(int drumsticks, float saturation, boolean wolfsfood)
+    public ItemBasicFood(int drumsticks, float saturation, boolean wolfsfood)
     {
         super(drumsticks, saturation, wolfsfood);
         this.setCreativeTab(KaasmodCreativetab.KAASMOD_TAB);

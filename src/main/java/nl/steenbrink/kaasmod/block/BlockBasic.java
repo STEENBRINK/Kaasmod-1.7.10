@@ -8,15 +8,15 @@ import net.minecraft.client.renderer.texture.IIconRegister;
 import nl.steenbrink.kaasmod.creativetab.KaasmodCreativetab;
 import nl.steenbrink.kaasmod.lib.Reference;
 
-public class BasicBlock extends Block
+public class BlockBasic extends Block
 {
-    public BasicBlock(Material material)
+    public BlockBasic(Material material)
     {
         super(material);
         this.setCreativeTab(KaasmodCreativetab.KAASMOD_TAB);
     }
 
-    public BasicBlock()
+    public BlockBasic()
     {
         this(Material.rock);
         this.setHardness(1.5F);

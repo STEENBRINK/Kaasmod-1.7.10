@@ -16,9 +16,9 @@ import nl.steenbrink.kaasmod.lib.Reference;
 
 import java.util.Random;
 
-public class KaasBricksSlab extends BlockSlab
+public class BlockKaasBricksSlab extends BlockSlab
 {
-    public KaasBricksSlab(boolean isDouble)
+    public BlockKaasBricksSlab(boolean isDouble)
     {
         super(isDouble, Material.rock);
         this.setBlockName("kaasBricksSlab");
@@ -33,7 +33,8 @@ public class KaasBricksSlab extends BlockSlab
     }
 
     @Override
-    public ItemStack getPickBlock(MovingObjectPosition target, World world, int x, int y, int z) {
+    public ItemStack getPickBlock(MovingObjectPosition target, World world, int x, int y, int z)
+    {
         return new ItemStack(KaasmodBlocks.kaasBricksSlab, 0, 0);
     }
 
@@ -62,7 +63,8 @@ public class KaasBricksSlab extends BlockSlab
     }
 
     @Override
-    protected ItemStack createStackedBlock(int meta) {
+    protected ItemStack createStackedBlock(int meta)
+    {
         return new ItemStack(KaasmodBlocks.kaasBricksSlab, 2, meta & 7);
     }
 

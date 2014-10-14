@@ -9,9 +9,9 @@ import nl.steenbrink.kaasmod.creativetab.KaasmodCreativetab;
 import nl.steenbrink.kaasmod.lib.KaasmodBlocks;
 import nl.steenbrink.kaasmod.lib.Reference;
 
-public class SmoothKaasStairs extends BlockStairs
+public class BlockSmoothKaasStairs extends BlockStairs
 {
-    public SmoothKaasStairs(Block block, int meta)
+    public BlockSmoothKaasStairs(Block block, int meta)
     {
         super(block, meta);
         this.setBlockName("smoothKaasStairs");

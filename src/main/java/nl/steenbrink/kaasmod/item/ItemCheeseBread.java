@@ -1,8 +1,8 @@
 package nl.steenbrink.kaasmod.item;
 
-public class CheeseBreadItem extends BasicFoodItem
+public class ItemCheeseBread extends ItemBasicFood
 {
-    public CheeseBreadItem()
+    public ItemCheeseBread()
     {
         super(6, 0.7F, false);
         this.setUnlocalizedName("cheeseBread");

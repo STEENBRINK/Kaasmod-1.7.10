@@ -1,8 +1,8 @@
 package nl.steenbrink.kaasmod.item;
 
-public class KaasBrickItem extends BasicItem
+public class ItemKaasBrick extends ItemBasic
 {
-    public KaasBrickItem()
+    public ItemKaasBrick()
     {
         super();
         this.setUnlocalizedName("kaasBrick");

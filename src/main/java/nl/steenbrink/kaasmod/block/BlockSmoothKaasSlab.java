@@ -17,12 +17,12 @@ import nl.steenbrink.kaasmod.lib.Reference;
 
 import java.util.Random;
 
-public class SmoothKaasSlabBlock extends BlockSlab
+public class BlockSmoothKaasSlab extends BlockSlab
 {
     @SideOnly(Side.CLIENT)
     private IIcon iconSide;
 
-    public SmoothKaasSlabBlock(boolean isDouble)
+    public BlockSmoothKaasSlab(boolean isDouble)
     {
         super(isDouble, Material.rock);
         this.setBlockName("smoothKaasSlab");
@@ -37,7 +37,8 @@ public class SmoothKaasSlabBlock extends BlockSlab
     }
 
     @Override
-    public ItemStack getPickBlock(MovingObjectPosition target, World world, int x, int y, int z) {
+    public ItemStack getPickBlock(MovingObjectPosition target, World world, int x, int y, int z)
+    {
         return new ItemStack(KaasmodBlocks.smoothKaasSlab, 0, 0);
     }
 

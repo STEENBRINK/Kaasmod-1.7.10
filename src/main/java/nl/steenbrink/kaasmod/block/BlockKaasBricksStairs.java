@@ -9,9 +9,9 @@ import nl.steenbrink.kaasmod.creativetab.KaasmodCreativetab;
 import nl.steenbrink.kaasmod.lib.KaasmodBlocks;
 import nl.steenbrink.kaasmod.lib.Reference;
 
-public class KaasStairBlock extends BlockStairs
+public class BlockKaasBricksStairs extends BlockStairs
 {
-    public KaasStairBlock(Block block, int meta)
+    public BlockKaasBricksStairs(Block block, int meta)
     {
         super(block, meta);
         this.setBlockName("kaasBricksStairs");

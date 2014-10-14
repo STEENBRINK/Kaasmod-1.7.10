@@ -11,16 +11,16 @@ import nl.steenbrink.kaasmod.item.ItemSmoothKaasSlab;
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class KaasmodBlocks
 {
-    public static final BasicBlock saltOre = new SaltoreBlock();
-    public static final BlockCake kaasBlock = new KaasBlock();
-    public static final BasicBlock kaasBricks = new KaasBricksBlock();
-    public static final BlockSlab kaasBricksSlab = new KaasBricksSlab(false);
-    public static final BlockSlab kaasBricksDoubleSlab = new KaasBricksSlab(true);
-    public static final BlockStairs kaasBrickStairs = new KaasStairBlock(KaasmodBlocks.kaasBricks, 0);
-    public static final BasicBlock smoothKaasBlock = new SmoothKaasBlock();
-    public static final BlockSlab smoothKaasSlab = new SmoothKaasSlabBlock(false);
-    public static final BlockSlab smoothKaasDoubleSlab = new SmoothKaasSlabBlock(true);
-    public static final BlockStairs smoothKaasStairs = new SmoothKaasStairs(KaasmodBlocks.smoothKaasBlock, 0);
+    public static final BlockBasic saltOre = new BlockSaltOreBlock();
+    public static final BlockCake kaasBlock = new BlockKaas();
+    public static final BlockBasic kaasBricks = new BlockKaasBricks();
+    public static final BlockSlab kaasBricksSlab = new BlockKaasBricksSlab(false);
+    public static final BlockSlab kaasBricksDoubleSlab = new BlockKaasBricksSlab(true);
+    public static final BlockStairs kaasBrickStairs = new BlockKaasBricksStairs(KaasmodBlocks.kaasBricks, 0);
+    public static final BlockBasic smoothKaasBlock = new BlockSmoothKaas();
+    public static final BlockSlab smoothKaasSlab = new BlockSmoothKaasSlab(false);
+    public static final BlockSlab smoothKaasDoubleSlab = new BlockSmoothKaasSlab(true);
+    public static final BlockStairs smoothKaasStairs = new BlockSmoothKaasStairs(KaasmodBlocks.smoothKaasBlock, 0);
 
     public static void init()
     {

@@ -12,7 +12,7 @@ import net.minecraftforge.common.util.ForgeDirection;
 import nl.steenbrink.kaasmod.lib.KaasmodItems;
 import nl.steenbrink.kaasmod.lib.Reference;
 
-public class KaasBlock extends BlockCake
+public class BlockKaas extends BlockCake
 {
     @SideOnly(Side.CLIENT)
     private IIcon iconTop;
@@ -21,7 +21,7 @@ public class KaasBlock extends BlockCake
     @SideOnly(Side.CLIENT)
     private IIcon iconInside;
 
-    public KaasBlock()
+    public BlockKaas()
     {
         super();
         this.setBlockName("kaas");

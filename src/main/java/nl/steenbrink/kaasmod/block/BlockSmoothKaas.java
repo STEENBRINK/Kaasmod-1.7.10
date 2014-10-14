@@ -1,8 +1,8 @@
 package nl.steenbrink.kaasmod.block;
 
-public class SmoothKaasBlock extends BasicBlock
+public class BlockSmoothKaas extends BlockBasic
 {
-    public SmoothKaasBlock()
+    public BlockSmoothKaas()
     {
         super();
         this.setBlockName("smoothKaasBlock");

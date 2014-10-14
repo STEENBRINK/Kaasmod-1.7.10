@@ -2,9 +2,9 @@ package nl.steenbrink.kaasmod.item;
 
 import net.minecraft.item.ItemStack;
 
-public class KniveItem extends BasicItem
+public class ItemKnive extends ItemBasic
 {
-    public KniveItem()
+    public ItemKnive()
     {
         super();
         this.setUnlocalizedName("knive");

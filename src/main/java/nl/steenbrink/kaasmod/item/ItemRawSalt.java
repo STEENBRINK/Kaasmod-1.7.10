@@ -1,8 +1,8 @@
 package nl.steenbrink.kaasmod.item;
 
-public class RawSaltItem extends BasicItem
+public class ItemRawSalt extends ItemBasic
 {
-    public RawSaltItem()
+    public ItemRawSalt()
     {
         super();
         this.setUnlocalizedName("rawSalt");
