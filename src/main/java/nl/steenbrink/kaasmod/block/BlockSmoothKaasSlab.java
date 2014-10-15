@@ -26,7 +26,7 @@ public class BlockSmoothKaasSlab extends BlockSlab
     public BlockSmoothKaasSlab(boolean isDouble)
     {
         super(isDouble, Material.rock);
-        this.setBlockName(NameReference.Blocks.KAAS_BRICKS_SLAB);
+        this.setBlockName(NameReference.Blocks.SMOOTH_KAAS_SLAB);
         this.setHardness(1.5F);
         this.setResistance(10.0F);
         this.setStepSound(soundTypePiston);

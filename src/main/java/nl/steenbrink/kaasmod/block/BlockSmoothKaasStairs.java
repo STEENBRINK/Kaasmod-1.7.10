@@ -15,7 +15,7 @@ public class BlockSmoothKaasStairs extends BlockStairs
     public BlockSmoothKaasStairs(Block block, int meta)
     {
         super(block, meta);
-        this.setBlockName(NameReference.Blocks.KAAS_BRICK_STAIRS);
+        this.setBlockName(NameReference.Blocks.SMOOTH_KAAS_STAIRS);
         this.setCreativeTab(KaasmodCreativetab.KAASMOD_TAB);
         this.setLightOpacity(0);
     }

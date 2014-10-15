@@ -17,7 +17,7 @@ public class Recipes
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(KaasmodItems.cheeseBread), " B ", "CCC", " B ", 'C', new ItemStack(KaasmodItems.cheeseSlice), 'B', new ItemStack(KaasmodItems.breadSlice)));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(KaasmodItems.cheeseBaconBread), " B ", "CPC", " B ", 'C', new ItemStack(KaasmodItems.cheeseSlice), 'P', new ItemStack(Items.cooked_porkchop), 'B', new ItemStack(KaasmodItems.breadSlice)));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(KaasmodBlocks.kaasBricksSlab, 6), "CCC", 'C', new ItemStack(KaasmodBlocks.kaasBricks)));
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(KaasmodBlocks.kaasBrickStairs, 4), "C  ", "CC ", "CCC", 'C', new ItemStack(KaasmodBlocks.kaasBricks)));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(KaasmodBlocks.kaasBricksStairs, 4), "C  ", "CC ", "CCC", 'C', new ItemStack(KaasmodBlocks.kaasBricks)));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(KaasmodBlocks.smoothKaasSlab, 6), "CCC", 'C', new ItemStack(KaasmodBlocks.smoothKaas)));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(KaasmodBlocks.smoothKaasStairs, 4), "C  ", "CC ", "CCC", 'C', new ItemStack(KaasmodBlocks.smoothKaas)));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(KaasmodBlocks.kaasBricks, 4), "KK", "KK", 'K', new ItemStack(KaasmodBlocks.smoothKaas)));
