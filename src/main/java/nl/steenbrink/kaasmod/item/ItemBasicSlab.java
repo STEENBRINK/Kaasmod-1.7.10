@@ -10,12 +10,12 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 
-public class ItemKaasmodSlab extends ItemBlock {
+public class ItemBasicSlab extends ItemBlock {
     private final boolean isDouble;
     private final BlockSlab singleSlab;
     private final BlockSlab doubleSlab;
 
-    public ItemKaasmodSlab(BlockSlab singleSlab, BlockSlab doubleSlab, Block block) {
+    public ItemBasicSlab(BlockSlab singleSlab, BlockSlab doubleSlab, Block block) {
         super(block);
         this.singleSlab = singleSlab;
         this.doubleSlab = doubleSlab;

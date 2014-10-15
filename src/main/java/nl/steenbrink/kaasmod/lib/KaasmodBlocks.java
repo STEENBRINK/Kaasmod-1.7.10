@@ -16,11 +16,11 @@ public class KaasmodBlocks
     public static final BlockBasic kaasBricks = new BlockKaasBricks();
     public static final BlockSlab kaasBricksSlab = new BlockKaasBricksSlab(false);
     public static final BlockSlab kaasBricksDoubleSlab = new BlockKaasBricksSlab(true);
-    public static final BlockStairs kaasBricksStairs = new BlockKaasBricksStairs(KaasmodBlocks.kaasBricks, 0);
+    public static final BlockStairs kaasBricksStairs = new BlockKaasBricksStairs(0);
     public static final BlockBasic smoothKaas = new BlockSmoothKaas();
     public static final BlockSlab smoothKaasSlab = new BlockSmoothKaasSlab(false);
     public static final BlockSlab smoothKaasDoubleSlab = new BlockSmoothKaasSlab(true);
-    public static final BlockStairs smoothKaasStairs = new BlockSmoothKaasStairs(KaasmodBlocks.smoothKaas, 0);
+    public static final BlockStairs smoothKaasStairs = new BlockSmoothKaasStairs(0);
 
     public static void init()
     {
