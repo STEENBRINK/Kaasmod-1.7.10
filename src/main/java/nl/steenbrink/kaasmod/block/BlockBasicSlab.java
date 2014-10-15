@@ -13,7 +13,7 @@ import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import nl.steenbrink.kaasmod.creativetab.KaasmodCreativetab;
-import nl.steenbrink.kaasmod.lib.Reference;
+import nl.steenbrink.kaasmod.lib.UnlocalizedNameHelper;
 
 import java.util.Random;
 
@@ -47,22 +47,18 @@ public class BlockBasicSlab extends BlockSlab {
 
     @Override
     public String getUnlocalizedName() {
-        return String.format("tile.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+        return UnlocalizedNameHelper.getUnlocalizedBlockName(super.getUnlocalizedName());
     }
 
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
         if (alternateTextures) {
-            this.sideTexture = iconRegister.registerIcon(getUnwrappedUnlocalizedName(this.getUnlocalizedName() + "_Side"));
-            this.topTexture = iconRegister.registerIcon(getUnwrappedUnlocalizedName(this.getUnlocalizedName() + "_Top"));
+            this.sideTexture = iconRegister.registerIcon(UnlocalizedNameHelper.getUnwrappedUnlocalizedName(this.getUnlocalizedName() + "_Side"));
+            this.topTexture = iconRegister.registerIcon(UnlocalizedNameHelper.getUnwrappedUnlocalizedName(this.getUnlocalizedName() + "_Top"));
         } else {
-            this.blockIcon = iconRegister.registerIcon(getUnwrappedUnlocalizedName(this.getUnlocalizedName()));
+            this.blockIcon = iconRegister.registerIcon(UnlocalizedNameHelper.getUnwrappedUnlocalizedName(this.getUnlocalizedName()));
         }
-    }
-
-    protected String getUnwrappedUnlocalizedName(String unlocalizedName) {
-        return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
     }
 
     @Override

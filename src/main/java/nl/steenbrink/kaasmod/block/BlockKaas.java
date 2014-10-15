@@ -11,7 +11,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import nl.steenbrink.kaasmod.lib.KaasmodItems;
 import nl.steenbrink.kaasmod.lib.NameReference;
-import nl.steenbrink.kaasmod.lib.Reference;
+import nl.steenbrink.kaasmod.lib.UnlocalizedNameHelper;
 
 public class BlockKaas extends BlockCake
 {
@@ -51,21 +51,16 @@ public class BlockKaas extends BlockCake
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister)
     {
-        this.iconTop = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())) + "Top");
-        this.iconBottom = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())) + "Bottom");
-        this.iconInside = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())) + "Inside");
-        this.blockIcon = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())) + "Side");
+        this.iconTop = iconRegister.registerIcon(String.format("%s", UnlocalizedNameHelper.getUnwrappedUnlocalizedName(this.getUnlocalizedName())) + "Top");
+        this.iconBottom = iconRegister.registerIcon(String.format("%s", UnlocalizedNameHelper.getUnwrappedUnlocalizedName(this.getUnlocalizedName())) + "Bottom");
+        this.iconInside = iconRegister.registerIcon(String.format("%s", UnlocalizedNameHelper.getUnwrappedUnlocalizedName(this.getUnlocalizedName())) + "Inside");
+        this.blockIcon = iconRegister.registerIcon(String.format("%s", UnlocalizedNameHelper.getUnwrappedUnlocalizedName(this.getUnlocalizedName())) + "Side");
     }
 
     @Override
     public String getUnlocalizedName()
     {
-        return String.format("tile.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
-    }
-
-    protected String getUnwrappedUnlocalizedName(String unlocalizedName)
-    {
-        return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
+        return UnlocalizedNameHelper.getUnlocalizedBlockName(super.getUnlocalizedName());
     }
 
     @Override

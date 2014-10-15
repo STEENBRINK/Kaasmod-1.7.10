@@ -6,7 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockStairs;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import nl.steenbrink.kaasmod.creativetab.KaasmodCreativetab;
-import nl.steenbrink.kaasmod.lib.Reference;
+import nl.steenbrink.kaasmod.lib.UnlocalizedNameHelper;
 
 public class BlockBasicStair extends BlockStairs {
 
@@ -18,16 +18,13 @@ public class BlockBasicStair extends BlockStairs {
 
     @Override
     public String getUnlocalizedName() {
-        return String.format("tile.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+        return UnlocalizedNameHelper.getUnlocalizedBlockName(super.getUnlocalizedName());
     }
 
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
-        blockIcon = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())));
+        blockIcon = iconRegister.registerIcon(String.format("%s", UnlocalizedNameHelper.getUnwrappedUnlocalizedName(this.getUnlocalizedName())));
     }
 
-    protected String getUnwrappedUnlocalizedName(String unlocalizedName) {
-        return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
-    }
 }

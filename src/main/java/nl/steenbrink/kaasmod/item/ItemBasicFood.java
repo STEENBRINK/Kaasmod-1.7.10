@@ -6,7 +6,7 @@ import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
 import nl.steenbrink.kaasmod.creativetab.KaasmodCreativetab;
-import nl.steenbrink.kaasmod.lib.Reference;
+import nl.steenbrink.kaasmod.lib.UnlocalizedNameHelper;
 
 public class ItemBasicFood extends ItemFood
 {
@@ -19,13 +19,12 @@ public class ItemBasicFood extends ItemFood
     @Override
     public String getUnlocalizedName()
     {
-        return String.format("item.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+        return UnlocalizedNameHelper.getUnlocalizedItemName(super.getUnlocalizedName());
     }
 
     @Override
-    public String getUnlocalizedName(ItemStack itemStack)
-    {
-        return String.format("item.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+    public String getUnlocalizedName(ItemStack itemStack) {
+        return this.getUnlocalizedName();
     }
 
     @Override
@@ -35,9 +34,5 @@ public class ItemBasicFood extends ItemFood
         itemIcon = iconRegister.registerIcon(this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".") + 1));
     }
 
-    protected String getUnwrappedUnlocalizedName(String unlocalizedName)
-    {
-        return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
-    }
 }
 
