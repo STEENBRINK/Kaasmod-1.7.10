@@ -11,7 +11,7 @@ public class Recipes
     public static void init()
     {
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(KaasmodItems.knive), "I ", " S", 'S', "stickWood", 'I', "ingotIron"));
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(KaasmodItems.cheeseSlicer), "K ", " S", 'K', new ItemStack(KaasmodItems.knive), 'S', "stickWood"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(KaasmodItems.cheeseSlicer), "I", "S", 'I', "ingotIron", 'S', "stickWood"));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(KaasmodBlocks.kaasBricks), "KK", "KK", 'K', new ItemStack(KaasmodItems.kaasBrick)));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(KaasmodItems.kaas), "CCC", "CCC", 'C', new ItemStack(KaasmodItems.cheeseSlice)));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(KaasmodItems.cheeseBread), " B ", "CCC", " B ", 'C', new ItemStack(KaasmodItems.cheeseSlice), 'B', new ItemStack(KaasmodItems.breadSlice)));
