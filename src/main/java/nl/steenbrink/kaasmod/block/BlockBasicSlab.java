@@ -72,7 +72,8 @@ public class BlockBasicSlab extends BlockSlab {
     }
 
     @Override
-    protected ItemStack createStackedBlock(int meta) {
+    protected ItemStack createStackedBlock(int meta)
+    {
         return new ItemStack(this.slabBlock, 2, meta & 7);
     }
 

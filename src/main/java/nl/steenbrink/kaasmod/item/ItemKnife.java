@@ -3,12 +3,12 @@ package nl.steenbrink.kaasmod.item;
 import net.minecraft.item.ItemStack;
 import nl.steenbrink.kaasmod.lib.NameReference;
 
-public class ItemKnive extends ItemBasic
+public class ItemKnife extends ItemBasic
 {
-    public ItemKnive()
+    public ItemKnife()
     {
         super();
-        this.setUnlocalizedName(NameReference.Items.KNIVE);
+        this.setUnlocalizedName(NameReference.Items.KNIFE);
         this.setContainerItem(this);
     }
 

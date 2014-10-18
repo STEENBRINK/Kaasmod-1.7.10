@@ -12,7 +12,7 @@ public class NameReference
         public static final String INGREDIENTS = "ingredients";
         public static final String KAAS_BRICK = "kaasBrick";
         public static final String KAAS = "kaasItem";
-        public static final String KNIVE = "knive";
+        public static final String KNIFE = "knife";
         public static final String PURE_SALT = "pureSalt";
         public static final String RAW_SALT = "rawSalt";
         public static final String ROASTED_SANDWICH = "roastedSandwich";
