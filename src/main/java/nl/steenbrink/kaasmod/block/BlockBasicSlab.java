@@ -2,7 +2,6 @@ package nl.steenbrink.kaasmod.block;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockSlab;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -14,20 +13,20 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import nl.steenbrink.kaasmod.creativetab.KaasmodCreativetab;
 import nl.steenbrink.kaasmod.lib.UnlocalizedNameHelper;
+import nl.steenbrink.kaasmod.util.LogHelper;
 
 import java.util.Random;
 
 public class BlockBasicSlab extends BlockSlab {
 
-    private Block slabBlock;
+    private BlockSlab slabBlock;
 
     private boolean alternateTextures;
     protected IIcon sideTexture;
     protected IIcon topTexture;
 
-    public BlockBasicSlab(Block slabBlock, boolean isDouble, boolean alternateTextures) {
+    public BlockBasicSlab(boolean isDouble, boolean alternateTextures) {
         super(isDouble, Material.rock);
-        this.slabBlock = slabBlock;
         this.alternateTextures = alternateTextures;
 
         this.setHardness(1.5F);
@@ -38,6 +37,10 @@ public class BlockBasicSlab extends BlockSlab {
         if (!isDouble) {
             this.setCreativeTab(KaasmodCreativetab.KAASMOD_TAB);
         }
+    }
+
+    public void setSlabBlock(BlockSlab slabBlock) {
+        this.slabBlock = slabBlock;
     }
 
     @Override
@@ -63,6 +66,8 @@ public class BlockBasicSlab extends BlockSlab {
 
     @Override
     public Item getItemDropped(int metadata, Random rand, int fortune) {
+        LogHelper.info(this.slabBlock);
+        LogHelper.info(Item.getItemFromBlock(this.slabBlock));
         return Item.getItemFromBlock(this.slabBlock);
     }
 
@@ -70,7 +75,6 @@ public class BlockBasicSlab extends BlockSlab {
     protected ItemStack createStackedBlock(int meta) {
         return new ItemStack(this.slabBlock, 2, meta & 7);
     }
-
 
     @Override
     public IIcon getIcon(int side, int metaData) {
